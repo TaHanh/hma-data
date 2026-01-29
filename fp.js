@@ -7132,7 +7132,7 @@
         const [{ fingerprint: fp, styleSystemHash, styleHash, domRectHash, canvas2dImageHash, canvas2dPaintHash, canvas2dTextHash, canvas2dEmojiHash, canvasWebglImageHash, canvasWebglParametersHash, },] = await Promise.all([
             fingerprint().catch((error) => console.error(error)) || {},
         ]);
-        console.clear();
+        // console.clear();
         if (!fp) {
             throw new Error("Fingerprint failed!");
         }
